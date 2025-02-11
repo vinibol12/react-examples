@@ -22,10 +22,8 @@ function FetchData() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button disabled={fetching} onClick={fetchData}>Fetch</button>
+    <div className="Fetch">
+    <button disabled={fetching} onClick={fetchData}>Fetch</button>
         {fetching && <p>Loading...</p>}
         <div>
           {jsonData && Object.entries(jsonData).map(([key, value]) => (
@@ -35,7 +33,6 @@ function FetchData() {
             </div>
           ))}
         </div>
-      </header>
     </div>
   )
 }

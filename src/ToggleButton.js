@@ -9,10 +9,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={handleClick}>{toggle}</button>
-      </header>
+    <div className="toggle">
+      <button onClick={handleClick}>{toggle}</button>
     </div>
   );
 }
